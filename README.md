@@ -10,9 +10,9 @@ I could act all intellectual and start discussing *Hypermedia As The Engine Of A
 
 ## Prerequisites
 
-- Node ((Setup Instructions))[https://nodejs.org/en/download]
-- Go ((Setup Instructions))[https://go.dev/dl/]
-- Air ((Setup Instructions))[https://github.com/air-verse/air/releases/tag/v1.61.7]
+- Node [(Setup Instructions)](https://nodejs.org/en/download)
+- Go [(Setup Instructions)](https://go.dev/dl/)
+- Air [(Setup Instructions)](https://github.com/air-verse/air/releases/tag/v1.61.7)
 - Templ CLI (`go install github.com/a-h/templ/cmd/templ@latest`)
 
 ## Running the Dev Server
