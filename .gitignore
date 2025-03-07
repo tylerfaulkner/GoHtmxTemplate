@@ -1,0 +1,7 @@
+static/index.css
+*_templ.go
+*_templ.txt
+main.exe*
+main.exe
+node_modules/
+.env

@@ -1,0 +1,26 @@
+package templates
+
+templ TemplatePage() {
+	<html>
+		<head>
+			<title>Go + HTMX Template</title>
+			<link rel="stylesheet" href="/index.css">
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.4/htmx.min.js" integrity="sha512-2kIcAizYXhIn8TzUvqzEDZNuDZ+aW7yE/+f1HJHXFjQcGNfv1kqzJSTBRBSlOgp6B/KZsz1K0a3ZTqP9dnxioQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		</head>
+		<body class="flex flex-row h-screen justify-center items-start">
+			<div class="flex max-w-4xl">
+				{ children... }
+			</div>
+		</body>
+	</html>
+}
+
+templ HomePage() {
+	@TemplatePage(){
+		<div class="flex flex-col gap-6 p-14">
+			<h1 class="text-4xl font-bold">Welcome to the Go + HTMX Template</h1>
+			<p class="text-lg">This is a simple template to get you started with Go and HTMX.</p>
+			<p class="text-lg">You can find the source code for this template on <a href="TODO">GitHub</a>.</p>
+		</div>
+	}
+}

@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "npx concurrently \"air\" \"templ generate --watch --proxy=http://localhost:2020 --open-browser=false -watch-pattern (.*templ$)\" \"npx @tailwindcss/cli --watch -i .\\static\\base.css -o .\\static\\index.css\"",
+    "build:tailwind": "npx @tailwindcss/cli -i .\\static\\base.css -o .\\static\\index.css",
+    "build:templ": "templ build",
+    "build:go": "go build -o .\\build\\app.exe",
+    "build": "npm run build:tailwind && npm run build:templ && npm run build:go && cp .\\.env .\\build\\.env"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.9",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.0.9"
+  }
+}
